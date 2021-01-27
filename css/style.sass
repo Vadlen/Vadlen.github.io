@@ -1,0 +1,424 @@
+@import _base
+
+$yellow : #FFD1A3 
+$pink: #91519B
+$pinkB: #D29DED
+$orange: #CF5B59 
+$red: #CF5B59
+
+.header
+    &-header
+        display: flex
+        justify-content: space-between
+        background-color: $pinkB
+        height: 15rem
+        align-items: center
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        .logo
+            h1
+                font-family: 'Sofia', cursive;
+                margin-left: 3rem
+                color: #CF5B59;
+                font-size: 6.4rem;
+                padding: 0 2rem;
+                background-color: $yellow
+                border-radius: 1rem;
+                @media screen and ( max-width: 700px  )
+                    display: inline-block
+                    margin-top: 3rem
+                    margin-left: 0
+                @media screen and ( max-width: 350px  )
+                    font-size: 5rem
+        .search
+            display: flex
+            align-items: center
+            margin-right: 10rem
+            margin-left: 4rem
+            border: 5px solid $yellow
+            height: 5rem
+            width: 50rem
+            a
+                margin-top: .5rem
+                margin-left: 1rem
+            @media screen and ( max-width: 700px  )
+                margin-top: 2rem
+                margin-left: auto
+                margin-right: auto
+                max-width: 40rem
+            @media screen and ( max-width: 420px  )
+                display: none
+        @media screen and ( max-width: 700px  )
+            display: block
+            text-align: center
+            height: 23rem
+        @media screen and ( max-width: 420px  )
+            height: 15rem
+        @media screen and ( max-width: 350px  )
+            height: 13rem
+            
+    .navigation
+        display: flex
+        align-items: center
+        justify-content: space-around
+        margin: 2rem 0
+        height: 5rem
+        background-color: $yellow 
+        @media screen and ( max-width: 1170px  )
+            height: 7rem
+        @media screen and ( max-width: 963px  )
+            height: 23rem
+        a
+            font-size: 2.2rem
+            color: $pink
+            &:hover
+                color: #CF5B59
+            @media screen and ( max-width: 350px  )
+                text-align: center
+        @media screen and ( max-width: 963px  )
+            flex-direction: column 
+            
+main
+    .main
+        display: flex
+        background-color: $pinkB
+        padding-bottom: 3rem
+        margin-bottom: 4rem
+        @media screen and ( max-width: 850px  )
+            justify-content: center
+        &-text
+            margin-top: 9rem
+            margin-left: 6rem
+            color: #FBDFFF
+            h2
+                margin-bottom: 7rem
+                font-size: 5rem
+                font-weight: 200
+                @media screen and ( max-width: 950px  )
+                    font-size: 4rem
+                @media screen and ( max-width: 850px  )
+                    margin-bottom: 3rem
+                @media screen and ( max-width: 500px  )
+                    font-size: 3rem
+            h3
+                font-size: 3.6rem
+                font-weight: 200
+                @media screen and ( max-width: 950px  )
+                    font-size: 3rem
+                @media screen and ( max-width: 500px  )
+                    font-size: 2rem
+            @media screen and ( max-width: 850px  )
+                margin-top: 3rem
+        &-img
+            @media screen and ( max-width: 850px  )
+                display: none
+.kotalog
+    .blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        .block
+            text-align: center
+            border: 3px solid $yellow
+            min-width: 35rem
+            margin: 2rem 2rem
+            border-radius: 6px
+            color: #803D8B
+            transition: .5s
+            @media screen and ( max-width: 350px  )
+                min-width: 32rem
+            &-img
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 32rem
+                border-bottom: 3px solid $yellow
+                transition: .5s
+            &-text
+                
+                h4
+                    margin-top: 1rem
+                    font-size: 2rem
+                    font-weight: 200
+                p
+                    margin-top: 1rem
+                    font-size: 2.5rem
+                    font-weight: 200
+            &-footer
+                display: flex
+                margin: 1rem 2.4rem
+                justify-content: space-between
+                span
+                    font-size: 1.5rem
+                    font-weight: 200
+                .evalution
+                    display: flex
+            &:hover
+                color: $orange
+                border: 3px solid $orange
+                .block-img
+                    border-bottom:  3px solid $orange
+            
+.about-text
+    text-align: center
+    .p1
+        margin: 1rem 0 3rem 0
+        font-size: 2.4rem
+        color: #803D8B
+
+    .p2
+        margin: 3rem 0 3rem 0
+        font-size: 2.4rem
+        color: #803D8B
+    .p3
+        margin: 3rem 0 3rem 0
+        font-size: 2.4rem
+        color: #803D8B
+    .about-mine
+        margin-top: 5rem
+        margin-bottom: 5rem
+        border: 6px solid #D29DED
+        border-radius: 12px
+        @media screen and ( max-width: 960px  )
+            margin-top: 3rem
+        h2
+            padding: 3rem 0 3rem 0
+            color: #91519B
+            font-size: 3.6rem
+            font-weight: 200
+            @media screen and ( max-width: 960px  )
+                padding: 2rem 0 
+                font-size: 3rem
+.line
+    margin-left: auto
+    margin-right:  auto
+    width: 78rem
+    height: 0.3rem
+    background-color: #FFD1A3
+.bizibord
+    color: #803D8B
+    margin-left: auto
+    margin-right: auto
+
+    h2
+        margin-left: 2rem
+        font-size: 3.6rem
+        font-weight: 200
+        @media screen and ( max-width: 560px  )
+            font-size: 3rem
+        @media screen and ( max-width: 360px  )
+            font-size: 2.4rem
+    p
+        margin-top: 2rem
+        font-weight: 200
+        font-size: 2.4rem
+        line-height: 3.5rem
+        @media screen and ( max-width: 560px  )
+            font-size: 2rem
+        @media screen and ( max-width: 360px  )
+            font-size: 1.6rem
+    &-1
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 0 6rem 0 6rem
+    &-2
+        margin: 0 0 0 6rem
+    &-3
+        margin-left: 6rem
+        h2
+            margin-top: 3rem
+        p
+            margin-bottom: 3rem
+        .line
+            width: 100rem
+            margin-bottom: 3rem
+            @media screen and ( max-width: 1150px  )
+                width: 50rem
+            @media screen and ( max-width: 560px  )
+                width: 30rem
+            @media screen and ( max-width: 360px  )
+                width: 20rem
+
+    &-text
+        max-width: 53rem
+        img
+            max-height: 40rem
+            
+        span
+            font-family: 'Sofia', cursive;
+        p
+            margin-top: 2rem
+    &-img
+        @media screen and ( max-width: 640px  )
+            display: none
+    .line
+        width: 50rem
+        margin-left: 0
+        @media screen and ( max-width: 640px  )
+            margin-top: 3rem
+            margin-bottom: 3rem
+        @media screen and ( max-width: 560px  )
+            width: 30rem
+        @media screen and ( max-width: 360px  )
+            width: 20rem
+    .line3
+        .line
+            margin-top: 4rem
+            margin-left: 6rem
+            margin-bottom: 3rem
+            width: 100rem
+            @media screen and ( max-width: 1150px  )
+                width: 50rem
+            @media screen and ( max-width: 560px  )
+                width: 30rem
+            @media screen and ( max-width: 360px  )
+                width: 20rem
+
+.reviews
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    &-block
+        display: flex
+        align-items: center
+        margin-top: 4rem
+        width: 110rem
+        background-color: transparent
+        border: 3px solid $yellow
+        transition: 0.5s
+        @media screen and ( max-width: 1150px  )
+            width: 90rem
+        @media screen and ( max-width: 920px  )
+            width: 60rem
+        @media screen and ( max-width: 610px  )
+            width: 40rem
+        @media screen and ( max-width: 420px  )
+            width: 25rem
+        &:last-child
+            margin-bottom: 4rem
+        &:hover
+            border: 3px solid $red
+            box-shadow:  -5px 3px 47px -2px rgba(34, 60, 80, 0.2)
+        &-header
+            display: flex
+            
+            &-img
+                margin: 1rem 0 0 1rem 
+            &-text
+                margin-top: 1.8rem
+                margin-left: 2rem
+                
+                p
+                    margin-top: .5rem
+                    margin-bottom: 4rem
+                    color: #91519B
+                    font-size: 1.8rem
+                    font-weight: 200
+                    @media screen and ( max-width: 420px  )
+                        font-size: 1.3
+        &-comment
+            margin-left: 2rem
+            padding-bottom: 2rem
+            @media screen and ( max-width: 920px  )
+                margin-left: 0
+    h3
+        font-size: 2.4rem
+        font-weight: 200
+        color: #803D8B
+        @media screen and ( max-width: 420px  )
+            font-size: 1.8rem
+
+.gallery
+    &-img
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        img
+            margin-top: 4rem
+            max-height: auto
+            max-width: 65rem
+            @media screen and ( max-width: 800px  )
+                max-height: auto
+                max-width: 50rem
+            @media screen and ( max-width: 570px  )
+                max-height: auto
+                max-width: 40rem
+            @media screen and ( max-width: 400px  )
+                max-height: auto
+                max-width: 30rem
+        margin-bottom: 3rem
+
+.contacts
+    .container
+        display: flex
+        justify-content: center
+    &-block
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        border: 3px solid $pinkB
+        width: 82rem
+        height: 56rem
+        margin-top: 5rem
+        @media screen and ( max-width: 900px )
+            width: 70rem
+            height: 45rem
+        @media screen and ( max-width: 720px )
+            width: 60rem
+            height: 45rem
+            margin-top: 3rem
+            margin-bottom: 3rem
+        .content
+            width: 54rem
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            .social
+                margin-top: 8rem
+                display: flex
+                justify-content: space-between
+                height: auto
+                width: 54rem
+                @media screen and ( max-width: 720px )
+                    flex-direction: column
+                    margin-top: 3rem
+                a
+                    img
+                        height: 4rem
+                        width: auto
+                    &:hover
+                        box-shadow: 4px 4px 59px -19px rgba(34, 60, 80, 0.19);
+                    @media screen and ( max-width: 720px )
+                        display: flex
+                        justify-content: center
+                        margin-bottom: 2rem
+        .tell
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 3px solid $yellow
+            max-width: 46rem
+            &:hover
+                a
+                    color: $orange
+                border: 3px solid $red
+            @media screen and ( max-width: 720px )
+                margin-top: 3rem
+            &-text
+                display: flex
+                justify-content: center
+                padding: 2rem
+                align-items: center
+                img
+                    height: 5rem
+                    width: auto
+                    @media screen and ( max-width: 720px )
+                        height: 4rem
+                a
+                    color: $pink
+                    font-size: 3.6rem
+                    @media screen and ( max-width: 720px )
+                        font-size: 2.5rem
+                
